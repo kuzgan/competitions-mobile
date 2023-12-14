@@ -1,9 +1,16 @@
-:root {
-  --main-background: #000;
-  --secondary-background: #14171A;
-
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 21px;
 }
 
-*, *::after, *::before {
-  box-sizing: border-box;
+.status-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.main-container__top-bar {
+  margin-bottom: 24px;
 }
