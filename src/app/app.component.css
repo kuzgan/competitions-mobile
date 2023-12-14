@@ -1,0 +1,9 @@
+:root {
+  --main-background: #000;
+  --secondary-background: #14171A;
+
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
