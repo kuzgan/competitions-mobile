@@ -1,0 +1,14 @@
+.status-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+
+.status-bar__picture {
+  position: absolute;
+  top: 17px;
+  left: 33px;
+}

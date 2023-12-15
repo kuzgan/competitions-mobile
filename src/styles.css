@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-background: #000;
+  --secondary-background: #14171A;
+
+  --main-border-color: rgba(255, 255, 255, 0.20);
+
+  --main-font-color: #FFF;
+  --secondary--font-color: #0B254D;
+
+  --accent-green: #88FFC7;
+  --accent-red: #FF6F6F;
+
+  --animation-time: 0.3s
+
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #38465c;
+  color: var(--main-font-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.root {
+  width: 375px;
+  height: 812px;
+}

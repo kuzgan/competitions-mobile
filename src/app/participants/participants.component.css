@@ -1,0 +1,33 @@
+.participants {
+  display: flex;
+  align-items: center;
+}
+
+.participants__img {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+}
+
+.participants__img:nth-child(2) {
+  right: 6px;
+}
+
+.participants__img:nth-child(3) {
+  right: 12px;
+}
+
+.participants__quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #2B2E30;
+  font-size: 8px;
+  font-weight: 400;
+}

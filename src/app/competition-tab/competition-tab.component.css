@@ -1,0 +1,131 @@
+.competition-tab {
+  width: 333px;
+  height: 485px;
+  border-radius: 20px;
+  border: 0.5px solid var(--main-border-color);
+  background: var(--secondary-background);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+}
+
+.competition-tab__top-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.competition-tab__too-late-info {
+  text-align: right;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.competition-tab__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  opacity: 0.5;
+  margin-bottom: 22px;
+}
+
+.competition-tab__bottom-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.competition-tab__game-info {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  column-gap: 8px;
+}
+
+.competition-tab__logo {
+  grid-row: span 2;
+  width: 24px;
+  height: 24px;
+}
+
+.competition-tab__founder-picture {
+  grid-row: span 2;
+  width: 24px;
+  height: 24px;
+}
+
+.competition-tab__bottom-info-text {
+  font-size: 10px;
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.competition-tab__bottom-info-text--small {
+  font-size: 8px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.competition-tab__days {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  column-gap: 8px;
+}
+
+.competition-tab__counter {
+  grid-row: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: solid var(--accent-red) 0.5px;
+  background-color: #261516;
+
+  color: var(--accent-red);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.competition-tab__days-text {
+  color: var(--accent-red);
+  font-size: 10px;
+  font-weight: 500;
+ }
+
+.competition-tab__days-text--small {
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.competition-tab__button {
+  color: inherit;
+  font-family: inherit;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 303px;
+  height: 47px;
+  padding: 14px 45px;
+  border-radius: 13px;
+  border: 0.5px solid var(--main-border-color);
+  background-color: #303236;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow var(--animation-time) ease-in-out, background-color var(--animation-time) ease-in-out;
+}
+
+.competition-tab__button:hover {
+  box-shadow: 0 8px 16px rgba(9, 60, 170, 0.514);
+  background-color: #14171A;
+}
