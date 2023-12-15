@@ -1,3 +1,24 @@
+.main-background {
+  width: 375px;
+  height: 812px;
+  background-color: var(--main-background);
+  position: relative;
+  color: var(--main-font-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-background::before {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  left: 0;
+  content: '';
+  height: 99px;
+  background: linear-gradient(270deg, #087AFF 38.5%, #A3FFE3 98.16%);
+  opacity: 0.85;
+  filter: blur(89.5px);
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -13,4 +34,5 @@
 
 .main-container__top-bar {
   margin-bottom: 24px;
+  z-index: 1;
 }
