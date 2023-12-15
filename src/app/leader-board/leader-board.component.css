@@ -1,0 +1,140 @@
+.leader-board {
+  color: var(--main-font-color);
+  position: relative;
+  display: flex;
+  width: 303px;
+  height: 77px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.leader-board:last-child {
+  margin-bottom: 20px;
+}
+
+.leader-board--red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.15;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(129, 237, 186, 0.00) 0%, var(--accent-red) 100%);
+}
+
+.leader-board--green::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.15;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(129, 237, 186, 0.00) 0%, var(--accent-green) 100%);
+}
+
+.leader-board__place {
+  padding: 4px;
+  width: 50px;
+  height: 77px;
+  margin-right: 22px;
+}
+
+.leader-board__place--leader1 {
+  background: #bce9c4;
+}
+
+.leader-board__place--leader2 {
+  background: #e5bdec;
+}
+
+.leader-board__place--leader3 {
+  background: #e1e7d2;
+}
+
+.leader-board__place-img {
+  height: 33px;
+}
+
+
+.leader-board__picture {
+  position: absolute;
+  top: 18px;
+  left: 11px;
+  width: 48px;
+  height: 41px;
+}
+
+.leader-board__leader-name {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.leader-board__leader-name-check {
+  margin-left: 5px;
+}
+
+.leader-board__info {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px 11px 0px;
+  width: 100%;
+}
+
+.leader-board__info-bottom {
+  display: flex;
+  gap: 10px;
+}
+
+.leader-board__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.leader-board__text {
+  color: var(--main-font-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+ }
+
+.leader-board__text--small {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.leader-board__profit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: auto;
+}
+
+.leader-board__profit {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.leader-board__profit--green {
+ color: var(--accent-green);
+}
+
+.leader-board__profit--red {
+ color: var(--accent-red);
+}
+
+.leader-board__profit--small {
+  font-size: 10px;
+}
