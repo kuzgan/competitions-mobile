@@ -1,6 +1,9 @@
 <article class="competition-tab">
   <div class="competition-tab__top-info">
     <app-participants></app-participants>
-    <span class="competition-tab__too-late-info">Too late to join</span>
+    <span class="competition-tab__too-late-info" *ngIf="tooLateToJoin(true)">Too late to join</span>
   </div>
+  <h2 class="competition-tab__title">Weekly Challenges</h2>
+  
+  <button class="competition-tab__button" type="button">view</button>
 </article>

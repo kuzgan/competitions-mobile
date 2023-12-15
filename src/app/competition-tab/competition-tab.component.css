@@ -2,7 +2,7 @@
   width: 333px;
   height: 485px;
   border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.20);
+  border: 0.5px solid var(--main-border-color);
   background: var(--secondary-background);
   backdrop-filter: blur(5px);
   padding: 15px;
@@ -11,6 +11,7 @@
 .competition-tab__top-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 22px;
 }
 
 .competition-tab__too-late-info {
@@ -19,4 +20,38 @@
   font-size: 10px;
   font-weight: 400;
   opacity: 0.5;
+}
+
+.competition-tab__title {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.5;
+  margin-bottom: 22px;
+}
+
+.competition-tab__button {
+  color: inherit;
+  font-family: inherit;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 303px;
+  height: 47px;
+  padding: 14px 45px;
+  border-radius: 13px;
+  border: 0.5px solid var(--main-border-color);
+  background-color: #303236;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow var(--animation-time) ease-in-out, background-color var(--animation-time) ease-in-out;
+}
+
+.competition-tab__button:hover {
+  box-shadow: 0 8px 16px rgba(9, 60, 170, 0.514);
+  background-color: #14171A;
 }
