@@ -2,11 +2,15 @@
   --main-background: #000;
   --secondary-background: #14171A;
 
+  --main-border-color: rgba(255, 255, 255, 0.20);
+
   --main-font-color: #FFF;
   --secondary--font-color: #0B254D;
 
   --accent-green: #88FFC7;
   --accent-red: #FF6F6F;
+
+  --animation-time: 0.3s
 
 }
 
