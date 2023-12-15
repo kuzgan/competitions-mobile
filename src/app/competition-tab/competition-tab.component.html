@@ -4,6 +4,32 @@
     <span class="competition-tab__too-late-info" *ngIf="tooLateToJoin(true)">Too late to join</span>
   </div>
   <h2 class="competition-tab__title">Weekly Challenges</h2>
-  
+  <app-leader-board
+    [profilePictureUrl]="'../../assets/participants-assets/participant-1.jpg'"
+    [verified]="true"
+    [userName]="'Roger Korsgaard'"
+    [place]="1"
+    [yield]="'11%'"
+    [winRate]="'85%'"
+    [alerts]="20"
+    [income]="7500"
+    [percentageIncome]="'45%'"
+  >
+  </app-leader-board>
+  <div class="competition-tab__bottom-info">
+    <div class="competition-tab__game-info">
+      <img class="competition-tab__founder-picture" src="../../assets/participants-assets/founder-0.jpg" alt="founder">
+      <p class="competition-tab__bottom-info-text">Roger K</p>
+      <img class="competition-tab__logo" src="../../assets/competition-tab-assets/logo.svg" alt="logo">
+      <p class="competition-tab__bottom-info-text">20,000</p>
+      <p class="competition-tab__bottom-info-text competition-tab__bottom-info-text--small">{{userTag}}</p>
+      <p class="competition-tab__bottom-info-text competition-tab__bottom-info-text--small">{{gameTag}}</p>
+    </div>
+    <div class="competition-tab__days">
+      <div class="competition-tab__counter">3</div>
+      <span class="competition-tab__days-text">Days</span>
+      <span class="competition-tab__days-text competition-tab__days-text--small">past</span>
+    </div>
+  </div>
   <button class="competition-tab__button" type="button">view</button>
 </article>

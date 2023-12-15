@@ -24,9 +24,83 @@
 
 .competition-tab__title {
   font-size: 20px;
+  line-height: 20px;
   font-weight: 500;
   opacity: 0.5;
   margin-bottom: 22px;
+}
+
+.competition-tab__bottom-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.competition-tab__game-info {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  column-gap: 8px;
+}
+
+.competition-tab__logo {
+  grid-row: span 2;
+  width: 24px;
+  height: 24px;
+}
+
+.competition-tab__founder-picture {
+  grid-row: span 2;
+  width: 24px;
+  height: 24px;
+}
+
+.competition-tab__bottom-info-text {
+  font-size: 10px;
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.competition-tab__bottom-info-text--small {
+  font-size: 8px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.competition-tab__days {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  column-gap: 8px;
+}
+
+.competition-tab__counter {
+  grid-row: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: solid var(--accent-red) 0.5px;
+  background-color: #261516;
+
+  color: var(--accent-red);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.competition-tab__days-text {
+  color: var(--accent-red);
+  font-size: 10px;
+  font-weight: 500;
+ }
+
+.competition-tab__days-text--small {
+  font-size: 8px;
+  font-weight: 400;
 }
 
 .competition-tab__button {
